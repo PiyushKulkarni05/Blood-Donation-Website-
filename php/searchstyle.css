@@ -1,0 +1,166 @@
+/* === GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
+/* === RESET & GLOBAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    font-size: 16px;
+}
+
+/* === HEADER === */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* === SEARCH SECTION === */
+.search-container {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.search-container h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #d32f2f;
+}
+
+/* === FORM STYLING === */
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #d32f2f;
+    outline: none;
+    background: #fff;
+}
+
+/* === SUBMIT BUTTON === */
+.search-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-container {
+        margin-top: 50px;
+    }
+
+    .search-form {
+        gap: 15px;
+    }
+
+    .search-container h2 {
+        font-size: 24px;
+    }
+
+    .search-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .search-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .search-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .search-container h2 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,228 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+/* HEADER */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('https://images.unsplash.com/photo-1588776814546-9819fc7e9334') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* To offset the header */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffffffcc;
+    color: #d32f2f;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* TWO HALF CONTAINER SECTION */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60vh;
+    
+}
+/* Make images responsive with a fixed height */
+.section-img {
+    width: auto;
+    height: 200px;  /* Set your desired height */
+    object-fit: cover;  /* Ensures the image maintains aspect ratio while covering the space */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Optional Styling to Space Out Images */
+.container .half img {
+    margin-bottom: 20px;
+}
+
+
+.half {
+    background: #fff;
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.half:hover {
+    transform: translateY(-10px);
+}
+
+.half h2 {
+    color: #d32f2f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.half p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.half .btn {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.half .btn:hover {
+    background-color: #1b5e20;
+}
+
+/* MISSION SECTION */
+.mission {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.importance {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.importance h2 {
+    color: #d32f2f;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.importance-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.importance-section img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.importance-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 600px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .importance-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .importance-section img {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.mission h2 {
+    color: #d32f2f;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.mission p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

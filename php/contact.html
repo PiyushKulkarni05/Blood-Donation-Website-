@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Blood Donation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    /* === HEADER STYLE === */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+    header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+    .contact-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #c0392b;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .contact-form button {
+      background: #e74c3c;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #c0392b;
+    }
+
+    .team-section {
+      background-color: #222;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      margin-bottom: 30px;
+      color: #f1c40f;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .member-box {
+      background: #333;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .member-box h3 {
+      color: #e74c3c;
+      margin-top: 0;
+    }
+
+    .member-box p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #eee;
+    }
+
+    a {
+      color: #f1c40f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .team-members {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .member-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="logo" style="height: 100px;">
+    <div class="logo">Blood Donation Bank</div>
+    <nav>
+        <a href="main.html">Home</a>
+        <a href="registration.html">Register</a>
+        <a href="search.html">Search</a>
+        
+    </nav>
+</header>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <h2>Get in Touch</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Team Section -->
+  <div class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-members">
+      <div class="member-box">
+        <h3>Piyush Kulkarni</h3>
+        <p><strong>College:</strong> KBTCOE</p>
+        <p><strong>Phone:</strong> <a href="tel:8421862562">8421862562</a></p>
+        <p><strong>Email:</strong> <a href="mailto:piyushvjkulkarni@gmail.com">piyushvjkulkarni2005@gmail.com</a></p>
+      </div>
+      <div class="member-box">
+        <h3>Nikita More</h3>
+        <p><strong>College:</strong> KBTCOE</p>
+        <p><strong>Phone:</strong> <a href="tel:9012345678">8177994074</a></p>
+        <p><strong>Email:</strong> <a href="mailto:rahul.shinde@example.com"> nmore8147@gmail.com</a></p>
+      </div>
+      <div class="member-box">
+        <h3>Vedant Jadhav</h3>
+        <p><strong>College:</strong> KBTCOE</p>
+        <p><strong>Phone:</strong> <a href="tel:9123456789">8767642811</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sneha.jadhav@example.com">Vedant.jadhav@example.com</a></p>
+      </div>
+      <div class="member-box">
+        <h3>Nikhil Kathale</h3>
+        <p><strong>College:</strong> KBTCOE</p>
+        <p><strong>Phone:</strong> <a href="tel:9876543210">9209661389</a></p>
+        <p><strong>Email:</strong> <a href="mailto:omkar.patil@example.com">Nikhil.Kathale@example.com</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
